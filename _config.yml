@@ -9,14 +9,14 @@ theme: jekyll-theme-chirpy
 lang: es
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone:
+timezone: America/Mazatlan
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
 title: PiraShield # the main title
 
-tagline: Akido # it will display as the subtitle
+tagline: Conocer es dominar, aprender es vencer. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -29,7 +29,7 @@ github:
   username: pirashield # change to your GitHub username
 
 instagram:
-   username: pira.shield # change to your Twitter username
+  username: pira.shield
 
 social:
   # Change to your full name.

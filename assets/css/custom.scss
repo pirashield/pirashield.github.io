@@ -1,5 +1,14 @@
-/* Cambiar color del título principal (site-title) */
+#toc-wrapper ul .is-active-link {
+  color: #49abad !important;
+}
+#toc-wrapper ul .is-active-link::before {
+  background-color: #05aea2 !important;
+}
 
+.btn-outline-primary {
+  --bs-btn-hover-bg: #187f7b;
+}
+/* Cambiar color personalizados com tema oscuro */
 @media (prefers-color-scheme: dark) {
   html:not([data-mode]),
   html[data-mode='dark'] {
@@ -31,19 +40,83 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  html:not([data-mode]),
   html[data-mode='light'] {
+    color-scheme: light;
     .post-desc {
       color: #2a2a2a;
     }
     #sidebar .site-title {
-      color: #11515a;
+      color: #22696f;
     }
     .card-title {
-      color: #11515a;
+      color: #22696f;
     }
-    --heading-color: #11515a;
+    --heading-color: #22696f;
     h1 {
-      color: #11515a;
+      color: #22696f;
+    }
+    h2 {
+      color: #007f7a;
+    }
+    h3 {
+      color: #1ba7a2;
+    }
+    h4 {
+      color: #3fc3bd;
+    }
+    strong,
+    b {
+      color: #da8500; /* resaltado */
+    }
+  }
+}
+
+/* Cambiar color personalizados com tema claro */
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]),
+  html[data-mode='dark'] {
+    color-scheme: dark;
+    .post-desc {
+      color: #cccccc;
+    }
+    #sidebar .site-title {
+      color: #3a9191;
+    }
+    --heading-color: #3a9191;
+    h1 {
+      color: #3a9191;
+    }
+    h2 {
+      color: #56b3b3;
+    }
+    h3 {
+      color: #7cd6d6;
+    }
+    h4 {
+      color: #b3ecec;
+    }
+    strong,
+    b {
+      color: #c68c36; /* resaltado */
+    }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html:not([data-mode]),
+  html[data-mode='light'] {
+    color-scheme: light;
+    .post-desc {
+      color: #2a2a2a;
+    }
+    #sidebar .site-title {
+      color: #22696f;
+    }
+    --heading-color: #22696f;
+    h1 {
+      color: #22696f;
     }
     h2 {
       color: #007f7a;
